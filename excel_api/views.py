@@ -19,6 +19,7 @@ class FilesList(generics.ListAPIView):
     queryset = Files.objects.all()
     serializer_class = FileSerializer
 
+
 # View to add a new file
 class FilesAdd(generics.CreateAPIView):
     queryset = Files.objects.all()

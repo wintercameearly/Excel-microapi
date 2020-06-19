@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import django_heroku
+#import django_heroku
 from django.conf.global_settings import SECURE_PROXY_SSL_HEADER
 from dotenv import load_dotenv
 
@@ -152,4 +152,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 SITE_ROOT = os.path.dirname(os.path.realpath(__file__))
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
