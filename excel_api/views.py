@@ -1,5 +1,4 @@
 import os
-
 from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -29,7 +28,7 @@ class FilesAdd(generics.CreateAPIView):
 @api_view(['GET', 'POST'])
 def parserview(request):
     start_time = start_timer()
-    #title = get_file_name(request.data.get('content'))
+    # title = get_file_name(request.data.get('content'))
     title = request.data.get('title')
     file = Files.objects.get(title=title)
     content = file.content.url
